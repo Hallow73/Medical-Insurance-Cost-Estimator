@@ -1,62 +1,142 @@
-# Medical-Insurance-Cost-Estimator
-A machine learning project that predicts annual medical insurance charges based on individual demographic and health-related characteristics.
+# Medical Insurance Cost Prediction
 
-Project Overview
+A machine learning project that predicts annual medical insurance charges based on individual characteristics using regression models. The project includes exploratory data analysis, feature engineering, model evaluation, and an interactive Streamlit web application.
 
-This project explores factors influencing medical insurance charges and develops regression models to estimate costs. An interactive Streamlit application allows users to enter their information and view predicted charges.
+## Project Overview
 
-Technologies Used
+The goal of this project is to analyze factors influencing medical insurance costs and build a predictive model that estimates annual insurance charges.
 
-Python
+The application allows users to enter personal information and receive an estimated insurance cost using a trained machine learning model.
 
-Pandas and NumPy
+## Technologies Used
 
-Matplotlib and Seaborn
+- **Programming Language:** Python
+- **Data Manipulation:** Pandas, NumPy
+- **Data Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn
+- **Model Serialization:** Joblib
+- **Web Application:** Streamlit
+- **Development Environment:** Jupyter Notebook, VS Code
 
-Scikit-learn
+## Dataset
 
-Streamlit
+The dataset contains information about individuals and their medical insurance charges.
 
-Joblib
+**Input Features:**
 
-Machine Learning Models
+| Feature | Description |
+|---------|-------------|
+| Age | Age of the individual |
+| Sex | Male or female |
+| BMI | Body Mass Index |
+| Children | Number of dependents |
+| Smoker | Smoking status |
+| Region | Geographic region |
 
-The project trains and compares three regression models:
+**Target Variable:** `charges` — Annual medical insurance charges.
 
-Linear Regression
+## Project Workflow
 
-Random Forest Regressor
+### 1. Exploratory Data Analysis (EDA)
 
-Gradient Boosting Regressor
+- Examined dataset structure and statistical summaries.
+- Analyzed distributions of insurance charges.
+- Explored relationships between demographic characteristics and medical costs.
+- Visualized relationships using Matplotlib and Seaborn.
 
-Models are evaluated using R², Mean Absolute Error (MAE), and Root Mean Squared Error (RMSE).
+### 2. Data Preprocessing and Feature Engineering
 
-Input Features
+- Checked for missing values and duplicate records.
+- Encoded categorical variables into numerical features.
+- Created BMI categories based on weight classification.
+- Prepared features for machine learning models.
+- Applied a logarithmic transformation to insurance charges for model training.
 
-Age
+### 3. Machine Learning Models
 
-Sex
+Trained and compared three regression models:
 
-Body Mass Index (BMI)
+1. **Linear Regression** — Establishes a baseline for predicting insurance costs.
+2. **Random Forest Regressor** — Captures nonlinear relationships using an ensemble of decision trees.
+3. **Gradient Boosting Regressor** — Sequentially combines decision trees to improve predictive performance.
 
-Number of children
+### 4. Model Evaluation
 
-Smoking status
+Evaluated regression performance using:
 
-Geographic region
+- **R² Score:** Measures the proportion of variance explained by the model.
+- **Mean Absolute Error (MAE):** Average absolute difference between predicted and actual charges.
+- **Root Mean Squared Error (RMSE):** Measures prediction error while penalizing larger errors.
 
-Project Workflow
+The selected model is saved using Joblib and integrated into the Streamlit application.
 
-Data exploration and visualization
+## Streamlit Web Application
 
-Data cleaning and preprocessing
+An interactive web application allows users to estimate annual medical insurance charges.
 
-Feature engineering and categorical encoding
+**Application Features:**
 
-Training regression models
+- Input age, sex, BMI, number of children, smoking status, and region.
+- Generate estimated annual medical insurance charges.
+- Display predictions in USD.
+- Compare estimated charges with reference averages for smokers and non-smokers.
+- Visualize results using an interactive bar chart.
 
-Comparing model performance
+### Live Demo
 
-Saving the selected model
+[Medical Insurance Cost Predictor](YOUR_STREAMLIT_APP_URL)
 
-Building an interactive Streamlit application
+*Replace `YOUR_STREAMLIT_APP_URL` with your deployed Streamlit website link.*
+
+## Repository Structure
+
+```text
+medical-insurance-cost-prediction/
+│
+├── app.py
+├── insurance_predictor.ipynb
+├── insurance_model.pkl
+├── model_features.pkl
+├── model_name.pkl
+├── requirements.txt
+└── README.md
+```
+
+## Installation and Usage
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/medical-insurance-cost-prediction.git
+cd medical-insurance-cost-prediction
+```
+
+**2. Install required libraries**
+
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the Streamlit application**
+
+```bash
+streamlit run app.py
+```
+
+**4. Open the application**
+
+The application will automatically open in your browser at:
+
+`http://localhost:8501`
+
+## Future Improvements
+
+- Add additional predictive models and hyperparameter tuning.
+- Incorporate more relevant insurance and health-related features.
+- Improve model interpretability through feature importance analysis.
+- Add additional visualizations and model performance comparisons.
+- Expand the Streamlit dashboard with interactive analysis features.
+
+## Disclaimer
+
+This project is intended for educational and data science portfolio purposes. Predicted charges are estimates based on sample data and do not represent actual insurance quotes or guaranteed healthcare expenses.
