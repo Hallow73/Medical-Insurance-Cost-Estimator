@@ -62,7 +62,7 @@ This project is for educational purposes. Predictions are estimates and do not r
 
 ## Dataset
 
-This project uses the [Medical Insurance Cost Prediction Dataset](https://www.kaggle.com/datasets/rahulvyasm/medical-insurance-cost-prediction) from Kaggle to predict annual medical insurance charges based on individual characteristics.
+This project uses the Medical Insurance Cost Prediction Dataset from Kaggle to predict annual medical insurance charges based on individual characteristics.
 
 **Dataset:**
 **Source:** [Kaggle – Medical Insurance Cost Prediction](https://www.kaggle.com/datasets/rahulvyasm/medical-insurance-cost-prediction)
