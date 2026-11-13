@@ -30,6 +30,8 @@ The application allows users to:
 - Compare predictions with smoker and non-smoker reference averages.
 - Visualize estimated charges using a bar chart.
 
+**[Medical Insurance Cost Predictor](https://medical-insurance-cost-estimator-mzplkv3xszmd3dr4opgcnj.streamlit.app)**
+
 ## Repository Structure
 
 ```text
