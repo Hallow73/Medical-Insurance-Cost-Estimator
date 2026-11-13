@@ -30,8 +30,6 @@ The application allows users to:
 - Compare predictions with smoker and non-smoker reference averages.
 - Visualize estimated charges using a bar chart.
 
-**[Launch Streamlit App](https://YOUR-APP-NAME.streamlit.app](https://medical-insurance-cost-estimator-mzplkv3xszmd3dr4opgcnj.streamlit.app))**
-
 ## Repository Structure
 
 ```text
