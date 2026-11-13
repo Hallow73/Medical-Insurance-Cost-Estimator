@@ -10,13 +10,13 @@ The application allows users to enter personal information and receive an estima
 
 ## Technologies Used
 
-- **Programming Language:** Python
-- **Data Manipulation:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn
-- **Machine Learning:** Scikit-learn
-- **Model Serialization:** Joblib
-- **Web Application:** Streamlit
-- **Development Environment:** Jupyter Notebook, VS Code
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- Scikit-learn
+- Joblib
+- Streamlit
+- Jupyter Notebook, VS Code
 
 ## Dataset
 
