@@ -3,7 +3,7 @@
 A machine learning project that predicts annual medical insurance charges based on individual characteristics using regression models. Includes data analysis, model comparison, and an interactive Streamlit application.
 
 ## Technologies Used
-- =Pandas, NumPy, Matplotlib, Seaborn
+- Pandas, NumPy, Matplotlib, Seaborn
 - Scikit-learn
 - Streamlit
 - Jupyter Notebook, VS Code
