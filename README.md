@@ -58,13 +58,13 @@ Launch the application:
 streamlit run app.py
 ```
 
-## Disclaimer
-
-This project is for educational purposes. Predictions are estimates and do not represent actual insurance quotes.
-
 ## Dataset
 
 This project uses the Medical Insurance Cost Prediction Dataset from Kaggle to predict annual medical insurance charges based on individual characteristics.
 
 **Dataset:**
 **Source:** [Kaggle – Medical Insurance Cost Prediction](https://www.kaggle.com/datasets/rahulvyasm/medical-insurance-cost-prediction)
+
+## Disclaimer
+
+This project is for educational purposes. Predictions are estimates and do not represent actual insurance quotes.
